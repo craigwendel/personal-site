@@ -7,6 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 .nav-transparent {
   background-color: transparent;
@@ -14,7 +15,7 @@
 .nav-colored {
   background-color: #34495e;
 }
-h4#logo {
+h4.logo {
   font-family: 'Yellowtail', cursive;
   font-size: 2em;
   text-shadow: 2px 2px #000;
@@ -131,13 +132,20 @@ button {
   margin-top: 2%;
   padding: 3%;
   background-color: #34495e;
-  border-radius: 10px;
+  border-radius: 50%;
   border: none;
 }
 button a {
-  font-size: 1.25em;
   text-decoration: none;
   color: #ecf0f1;
+}
+
+.fa-link {
+  font-size: 2em;
+  padding: 1%;
+}
+.fa-code {
+  font-size: 2em;
 }
 .languages {
   height: 20em;
@@ -182,6 +190,10 @@ button a {
   background-color: #F5F0F6;
   height: 6em;
 }
+.contact h3 {
+  font-size: 2em;
+  color: #34495e;
+}
 .contact-ul {
   display: flex;
   align-items: center;
@@ -190,15 +202,49 @@ button a {
   height: 6em;
   width: 70%;
 }
-.contact-ul img {
-  width: 15vw;
-  border-radius: 100%;
-  z-index: 3;
-}
 .contact-ul a {
   text-decoration: none;
   font-size: 1.5em;
   color: #2980b9;
+}
+.about-craig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  color: #ecf0f1;
+  font-size: 2em;
+  padding-top: 2%;
+}
+.about-craig img {
+  width: 20vw;
+  border-radius: 100%;
+  text-align: center;
+  z-index: 3;
+  margin-top: 4%;
+}
+.about-craig p {
+  margin: 4% 0%;
+  font-size: .8em;
+}
+.resume {
+  background-color: #F5F0F6;
+}
+.my-resume {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6em;
+  padding-bottom: 2%;
+}
+.my-resume a {
+  text-decoration: none;
+  color: #34495e;
+  text-align: center;
+}
+.fa-file-text {
+  font-size: 2.5em;
 }
 footer {
   background-color: #16a085;
@@ -212,7 +258,7 @@ footer {
 
 /*------------ MEDIA QUERY: MOBILE ------------*/
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 600px) {
   h4#logo {
     font-size: 1.25em;
   }
@@ -287,9 +333,9 @@ footer {
 
 /*------------ MEDIA QUERY: TABLET ------------*/
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
   #project-mid {
     background-color: red;
   }
 
-}
+}*/
