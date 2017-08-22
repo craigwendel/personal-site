@@ -15,7 +15,7 @@
 .nav-colored {
   background-color: #34495e;
 }
-h4.logo {
+.logo {
   font-family: 'Yellowtail', cursive;
   font-size: 2em;
   text-shadow: 2px 2px #000;
@@ -24,6 +24,14 @@ h4.logo {
 }
 a#logo {
   text-decoration: none;
+}
+a.contact-scroll {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2em;
+  text-shadow: 2px 2px #000;
+  color: #ecf0f1;
+  margin-right: 2%;
+  float: right;
 }
 header {
   height: 40em;
@@ -123,6 +131,9 @@ header {
 .project-image img {
   width: 30vw;
 }
+.project-image img:hover {
+  opacity: 0.7;
+}
 #project-mid {
   background-color: #1abc9c;
   width: 100%;
@@ -193,7 +204,6 @@ button:hover {
 }
 .contact {
   background-color: #F5F0F6;
-  height: 6em;
 }
 .contact h3 {
   font-size: 2em;
@@ -204,13 +214,17 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  height: 6em;
+  height: 12em;
   width: 70%;
 }
 .contact-ul a {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #2980b9;
+}
+.contact-ul a:hover {
+  color: #34495e;
+  cursor: pointer;
 }
 .about-craig {
   display: flex;

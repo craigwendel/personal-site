@@ -3,22 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type='text/javascript'>
-      $(document).ready(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 300) {
-                $('#scroll').fadeIn();
-            } else {
-                $('#scroll').fadeOut();
-            }
-        });
-        $('#scroll').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 900);
-            return false;
-        });
-      });
-    </script>
     <script src="https://use.fontawesome.com/ac73b28558.js"></script>
     <title>Craig A Wendel</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -26,8 +10,7 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <nav class="main-nav" id="main-nav">
-      <a id="logo" href="file:///Users/craigwendel/Desktop/craigwendel/personal-site/index.html"><h4 class="logo">CraigAWendel.com</h4></a>
+    <nav class="main-nav" id="main-nav"><a id="logo" class="logo" href="file:///Users/craigwendel/Desktop/craigwendel/personal-site/index.html">CraigAWendel.com</a><a class='contact-scroll' href="#contact">Contact</a>
     </nav>
   <header id="hero">
     <div class="main-heading">
@@ -122,7 +105,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d45321.14877015138!2d-95.37653383939596!3d29.771382978805324!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1502821522053" width="1500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </section>
-  <section class="contact nav-colored">
+  <section class="contact nav-colored" id="contact">
     <div class="contact-links">
       <ul class="contact-ul">
         <h3>Contact Me:</h3>
@@ -155,6 +138,8 @@
       <h6>© Craig A Wendel | 2017</h6>
     </div>
   </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
