@@ -3,7 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 300) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
+        });
+        $('#scroll').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 900);
+            return false;
+        });
+      });
+    </script>
     <script src="https://use.fontawesome.com/ac73b28558.js"></script>
     <title>Craig A Wendel</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -43,8 +58,8 @@
           <div class="project-info">
             <h4>Mock Apple Website</h4>
             <p>This project was built with React JS and React Router.  It is a mock up of apple.com with products available to browse and add to a fictional cart.  The syling was done from scratch to mimic the look and feel of apple.com</p>
-            <button><a href="https://craigwendel.github.io/ecommerce-mock-site" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></button>
-            <button><a href="https://github.com/craigwendel/ecommerce-mock-site" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a></button>
+            <a href="https://craigwendel.github.io/ecommerce-mock-site" target="_blank"><button><i class="fa fa-link" aria-hidden="true"></i></button></a>
+            <a href="https://github.com/craigwendel/ecommerce-mock-site" target="_blank"><button><i class="fa fa-code" aria-hidden="true"></i></button></a>
           </div>
         </div>
         <div class="project-flex" id="project-mid">
@@ -56,8 +71,8 @@
           <div class="project-info">
             <h4>Gabble!</h4>
             <p>This project was built with node.js and Express.  It allows users to sign up, create posts or "Gabs", and see what other people are posting.  It is hosted on heroku and ties into a SQL database using Postgres.</p>
-            <button><a href="http://stormy-sierra-79098.herokuapp.com/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></button>
-            <button><a href="https://github.com/craigwendel/gabble" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a></button>
+            <a href="http://stormy-sierra-79098.herokuapp.com/" target="_blank"><button><i class="fa fa-link" aria-hidden="true"></i></button></a>
+            <a href="https://github.com/craigwendel/gabble" target="_blank"><button><i class="fa fa-code" aria-hidden="true"></i></button></a>
           </div>
         </div>
         <div class="project-flex">
@@ -69,8 +84,8 @@
           <div class="project-info">
             <h4>SoundCloud</h4>
             <p>This project was built with vanilla JavaScript.  This application uses the API from Soundcloud to fetch artists/tracks and dynamically inject HTML results into the DOM.  This was our first major project using AJAX requests and I really enjoyed working on this one!</p>
-            <button><a href="https://craigwendel.github.io/soundcloud/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></button>
-            <button><a href="https://github.com/craigwendel/soundcloud" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a></button>
+            <a href="https://craigwendel.github.io/soundcloud/" target="_blank"><button><i class="fa fa-link" aria-hidden="true"></i></button></a>
+            <a href="https://github.com/craigwendel/soundcloud" target="_blank"><button><i class="fa fa-code" aria-hidden="true"></i></button></a>
           </div>
         </div>
       </div>
@@ -123,7 +138,7 @@
       <h3>About</h3>
       <img src="./images/craigwendel.jpg" alt="self portrait of me">
       <p>
-        Hi! My name is Craig Wendel.  I moved from Austin Texas in May to attend the Iron Yard here in Houston, TX.  It's been a great past few months and I'm really loving every minute of class learning more about coding languages and frameworks.  I'm currently looking for opportunities to continue my coding career and continue to expand my knowledge in this ever evolving industry!
+        Hi! My name is Craig Wendel.  I moved from Austin Texas in May to attend the Iron Yard in Houston, TX.  It's been a great past few months and I'm really loving every minute of class learning more about coding languages and frameworks.  I'm currently looking for opportunities to continue my coding career and continue to expand my knowledge in this ever evolving industry!
       </p>
     </div>
   </div>
@@ -134,6 +149,7 @@
       <i class="fa fa-file-text" aria-hidden="true"></i>
       </a>
     </div>
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
   <footer>
     <div class="footer-info">
       <h6>© Craig A Wendel | 2017</h6>

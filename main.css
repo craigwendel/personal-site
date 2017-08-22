@@ -139,13 +139,18 @@ button a {
   text-decoration: none;
   color: #ecf0f1;
 }
-
+button:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
 .fa-link {
   font-size: 2em;
   padding: 1%;
+  color: #ecf0f1;
 }
 .fa-code {
   font-size: 2em;
+  color: #ecf0f1;
 }
 .languages {
   height: 20em;
@@ -245,6 +250,31 @@ button a {
 }
 .fa-file-text {
   font-size: 2.5em;
+}
+#scroll {
+  position:fixed;
+  right: 2%;
+  bottom: 2%;
+  width:50px;
+  height:50px;
+  background-color: #2ecc71;
+  display:none;
+  border-radius: 50%
+}
+#scroll:hover {
+  background-color: #27ae60;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
+}
+.fa-chevron-up {
+  font-size: 1.5em;
+  margin-left: 25%;
+  padding-top: 20%;
+}
+a#scroll {
+  text-decoration: none;
+  color: #ecf0f1;
+  margin-left: 5%;
 }
 footer {
   background-color: #16a085;
