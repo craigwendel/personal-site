@@ -25,6 +25,9 @@
 a#logo {
   text-decoration: none;
 }
+a#logo:hover {
+  color: #bdc3c7;
+}
 a.contact-scroll {
   font-family: 'Yellowtail', cursive;
   font-size: 2em;
@@ -32,6 +35,10 @@ a.contact-scroll {
   color: #ecf0f1;
   margin-right: 2%;
   float: right;
+  text-decoration: none;
+}
+a.contact-scroll:hover {
+  color: #bdc3c7;
 }
 header {
   height: 40em;
@@ -261,6 +268,9 @@ button:hover {
   text-decoration: none;
   color: #34495e;
   text-align: center;
+}
+.my-resume a:hover {
+  color: #2980b9;
 }
 .fa-file-text {
   font-size: 2.5em;

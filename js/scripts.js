@@ -7,7 +7,7 @@ $(document).ready(function () {
     }
   })
   $('#scroll').click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 900)
+    $("html, body").animate({ scrollTop: 0 }, 1500)
     return false
   })
 })
@@ -19,7 +19,7 @@ $(document).ready(function () {
       var hash = this.hash
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function () {
+      }, 1500, function () {
         window.location.hash = hash
       })
     }
