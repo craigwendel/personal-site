@@ -109,8 +109,6 @@ header {
   text-align: center;
   padding: 2% 0% 1% 0%;
   color: #34495e;
-  border-bottom: 1px solid #2c3e50;
-  width: 15%;
 }
 .main-projects {
   display: flex;
@@ -179,8 +177,6 @@ button:hover {
   text-align: center;
   color: #34495e;
   padding: 2% 0% 1% 0%;
-  border-bottom: 1px solid #2c3e50;
-  width: 35%;
 }
 .language-images {
   margin-top: 2%;
@@ -215,6 +211,8 @@ button:hover {
 .contact h3 {
   font-size: 2em;
   color: #34495e;
+  text-align: center;
+  padding-top: 2%;
 }
 .contact-ul {
   display: flex;
@@ -312,8 +310,11 @@ footer {
 
 /*------------ MEDIA QUERY: MOBILE ------------*/
 
-@media (min-width: 375px) and (max-width: 600px) {
-  h4#logo {
+@media (min-width: 300px) and (max-width: 600px) {
+  .logo {
+    font-size: 1.25em;
+  }
+  a.contact-scroll {
     font-size: 1.25em;
   }
   header {
@@ -332,7 +333,6 @@ footer {
     height: 88em;
   }
   .project-flex {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 28em;
@@ -340,9 +340,6 @@ footer {
   .project-info {
     font-size: .8em;
     width: 80%;
-  }
-  .projects h3 {
-    border-bottom: none;
   }
   .project-info h4 {
     font-size: 1.5em;
@@ -355,10 +352,11 @@ footer {
     margin-bottom: 2%;
   }
   .languages {
-    height: 23em;
+    height: 18em;
   }
   .languages h3 {
-    font-size: 1.5em;
+    font-size: 2em;
+    border: none;
   }
   .language-images {
     display: flex;
@@ -366,30 +364,216 @@ footer {
     width: 80%;
   }
   .language-images img {
-    width: 20vw;
+    width: 18vw;
+  }
+  .google-map {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
   }
   .contact {
-    height: 10em;
+    height: 8em;
   }
   .contact-ul {
-    flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
-    height: 10em;
-  }
-  .contact-ul img {
-    width: 20vw;
+    align-items: flex-start;
+    width: 55%;
   }
   .contact-ul a {
     font-size: 1.75em;
+  }
+  .about-craig {
+    width: 80%;
+  }
+  .about-craig img {
+    width: 30vw;
+  }
+  .about-craig p {
+    font-size: .6em;
   }
 }
 
 /*------------ MEDIA QUERY: TABLET ------------*/
 
-/*@media (min-width: 600px) {
-  #project-mid {
-    background-color: red;
+@media (min-width: 601px) and (max-width: 900px) {
+  .logo {
+    font-size: 1.75em;
   }
+  a.contact-scroll {
+    font-size: 1.75em;
+  }
+  .main-heading h1 {
+    font-size: 2.5em;
+  }
+  .main-heading h4 {
+    font-size: 1.75em;
+  }
+  .projects {
+    height: 97em;
+  }
+  .project-flex {
+    height: 31em;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-info {
+    font-size: .8em;
+    width: 80%;
+  }
+  .project-info h4 {
+    font-size: 2em;
+  }
+  .project-info p {
+    font-size: 1.5em;
+  }
+  .project-image img {
+    width: 50vw;
+    margin-bottom: 2%;
+  }
+  .languages {
+    height: 16em;
+  }
+  .languages h3 {
+    font-size: 2em;
+    border: none;
+  }
+  .language-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .language-images img {
+    width: 11vw;
+  }
+  .google-map {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+  }
+  .contact {
+    height: 10em;
+  }
+  .contact-ul {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 40%;
+  }
+  .contact-ul a {
+    font-size: 2.5em;
+  }
+  .about-craig {
+    width: 80%;
+  }
+  .about-craig img {
+    width: 30vw;
+  }
+}
 
-}*/
+/*------------ MEDIA QUERY: LABTOP/SMALL DESKTOP ------------*/
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .main-heading h1 {
+    font-size: 3.5em;
+  }
+  .main-heading h4 {
+    font-size: 2em;
+  }
+  .project-image img {
+    width: 45vw;
+    margin-bottom: 2%;
+  }
+  .language-images {
+    display: flex;
+    width: 80%;
+  }
+  .language-images img {
+    width: 11vw;
+  }
+  .contact {
+    height: 12em;
+  }
+  .contact-ul {
+    align-items: flex-start;
+    width: 50%;
+  }
+  .contact-ul a {
+    font-size: 2.5em;
+  }
+  .about-craig img {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1650px) {
+  .sub-heading {
+    margin-top: 8%;
+  }
+}
+
+/*------------ MEDIA QUERY: LARGE DISPLAYS ------------*/
+
+@media (min-width: 1651px) {
+  .sub-heading {
+    margin-top: 8%;
+  }
+  .projects {
+    height: 99em;
+  }
+  .projects h3 {
+    font-size: 3em;
+  }
+  .project-flex {
+    height: 30em;
+  }
+  .project-info h4 {
+    font-size: 2.25em;
+  }
+  .project-info p {
+    font-size: 1.4em;
+  }
+  .project-image img {
+    width: 42vw;
+    margin-bottom: 2%;
+  }
+  .languages {
+    height: 25em;
+  }
+  .languages h3 {
+    font-size: 3em;
+  }
+  .contact {
+    height: 15em;
+  }
+  .contact h3 {
+    font-size: 3em;
+  }
+  .contact-ul {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 45%;
+  }
+  .contact-ul a {
+    font-size: 3em;
+  }
+  .about-craig h3 {
+    font-size: 1.5em;
+  }
+  .resume h3 {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+  }
+}
+
+/*------------ MEDIA QUERY: 27+ INCH DISPLAYS ------------*/
+
+@media (min-width: 1900px) {
+  .sub-heading {
+    margin-top: 4%;
+  }
+  .project-image img {
+    width: 32vw;
+    margin-bottom: 2%;
+  }
+}
