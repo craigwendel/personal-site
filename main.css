@@ -383,15 +383,18 @@ footer {
     height: 8em;
   }
   .contact-ul {
-    flex-wrap: wrap;
     align-items: flex-start;
     width: 55%;
+    margin-left: 20%;
   }
   .contact-ul a {
     font-size: 1.75em;
   }
   .about-craig {
     width: 80%;
+  }
+  .about-craig h3 {
+    text-align: center;
   }
   .about-craig img {
     width: 30vw;
