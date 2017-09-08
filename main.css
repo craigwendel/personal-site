@@ -451,7 +451,7 @@ footer {
   .language-images {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
   }
   .language-images img {
     width: 11vw;
@@ -496,7 +496,7 @@ footer {
   }
   .language-images {
     display: flex;
-    width: 80%;
+    width: 95%;
   }
   .language-images img {
     width: 11vw;
