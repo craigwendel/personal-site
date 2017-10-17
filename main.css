@@ -144,28 +144,32 @@ header {
   width: 100%;
   padding: 0% 5% 0% 5%;
 }
-button {
-  margin-top: 2%;
-  padding: 3%;
-  background-color: #34495e;
-  border-radius: 50%;
-  border: none;
+
+.a-button {
+    display: inline-block;
+    margin-top: 2%;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    color:#ecf0f1;
+    text-align:center;
+    text-decoration:none;
+    background-color: #34495e;
+    border-radius: 50%;
 }
-button a {
-  text-decoration: none;
-  color: #ecf0f1;
+.a-button:hover {
+    background: #2980b9;
+    cursor: auto;
 }
-button:hover {
-  background-color: #2980b9;
-  cursor: pointer;
-}
+
 .fa-link {
-  font-size: 2em;
+  font-size: 1em;
   padding: 1%;
   color: #ecf0f1;
 }
 .fa-code {
-  font-size: 2em;
+  font-size: 1em;
   color: #ecf0f1;
 }
 .languages {
@@ -358,6 +362,15 @@ footer {
     width: 60vw;
     margin-bottom: 2%;
   }
+  .a-button {
+    margin-top: 3%;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+  }
+  .fa-link,.fa-code {
+    font-size: 1.25em;
+  }
   .languages {
     height: 18em;
   }
@@ -440,6 +453,15 @@ footer {
   .project-image img {
     width: 50vw;
     margin-bottom: 2%;
+  }
+  .a-button {
+    margin-top: 3%;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+  }
+  .fa-link,.fa-code {
+    font-size: 1.25em;
   }
   .languages {
     height: 16em;
