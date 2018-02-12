@@ -400,8 +400,11 @@ footer {
   .contact-ul {
     align-items: flex-start;
     width: 55%;
-    margin:  3% 0% 0% 20%;
+    margin:  3% 0% 0% 22%;
     font-size: 1.4em;
+  }
+  .contact-links h3 {
+    font-size: 2em;
   }
   .contact-ul a {
     font-size: 1.75em;
