@@ -19,11 +19,11 @@ $(document).ready(function () {
     if (this.hash !== '') {
       event.preventDefault()
       // Store hash
-      var hash = this.hash
+      let hash = this.hash
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1200, function () {
+      }, 1500, function () {
         window.location.hash = hash
       })
     }

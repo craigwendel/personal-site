@@ -198,41 +198,40 @@ padding: 0% 5%;
 .language-images img {
   width: 8vw;
 }
-.google-map {
-  position: relative;
-  padding-bottom: 30%;
-  height: 0;
-  overflow: hidden;
-}
-.google-map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+.google-map-image {
+  background-image: url("./images/houston-google-map.jpg");
+  height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
 }
 .contact {
-  background-color: #F5F0F6;
+  background-color: transparent;
+  position: relative;
+  z-index: 5;
+  top: 10em;
+  height: 0em;
 }
 .contact-links h3 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #34495e;
   text-align: center;
-  padding-top: 2%;
 }
 .contact-ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   list-style: none;
-  height: 12em;
   width: 50%;
+  height: 5em;
+  font-size: 1.75em;
+  padding: 0%;
 }
 .contact-ul a {
-  text-decoration: none;
   font-size: 3em;
-  color: #2980b9;
+  color: rgba(41, 128, 185, 1.0);
 }
 .contact-ul a:hover {
   color: #34495e;
@@ -389,19 +388,20 @@ footer {
   .language-images img {
     width: 18vw;
   }
-  .google-map {
-    position: relative;
-    padding-bottom: 50%;
-    height: 0;
-    overflow: hidden;
+  .google-map-image {
+    background-attachment: scroll;
+    background-position: center;
+    height: 325px;
   }
-  .contact-links {
-    height: 8em;
+  .contact {
+    top: 5em;
+    height: 0em;
   }
   .contact-ul {
     align-items: flex-start;
     width: 55%;
-    margin-left: 20%;
+    margin:  3% 0% 0% 20%;
+    font-size: 1.4em;
   }
   .contact-ul a {
     font-size: 1.75em;
@@ -484,19 +484,15 @@ footer {
   .language-images img {
     width: 11vw;
   }
-  .google-map {
-    position: relative;
-    padding-bottom: 40%;
-    height: 0;
-    overflow: hidden;
+  .google-map-image {
+    height: 350px;
   }
-  .contact-links {
-    height: 10em;
+  .contact {
+    top: 5em;
+    height: 0em;
   }
   .contact-ul {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 40%;
+    padding: 0%;
   }
   .contact-ul a {
     font-size: 2.5em;
@@ -529,12 +525,16 @@ footer {
   .language-images img {
     width: 11vw;
   }
-  .contact-links {
-    height: 12em;
+  .google-map-image {
+    height: 400px;
+  }
+  .contact {
+    top: 5em;
+    height: 0em;
   }
   .contact-ul {
-    align-items: flex-start;
-    width: 50%;
+    padding: 0%;
+    font-size: 1.8em;
   }
   .contact-ul a {
     font-size: 2.5em;
@@ -557,7 +557,7 @@ footer {
     margin-top: 8%;
   }
   .projects {
-    height: 110em;
+    height: 138em;
   }
   .projects h3 {
     font-size: 3em;
@@ -587,13 +587,18 @@ footer {
   .contact h3 {
     font-size: 3em;
   }
+  .google-map-image {
+    height: 550px;
+  }
+  .contact {
+    top: 9em;
+    height: 0em;
+  }
   .contact-ul {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 45%;
+    padding: 0%;
   }
   .contact-ul a {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   .about-craig h3 {
     font-size: 1.5em;
@@ -613,5 +618,12 @@ footer {
   .project-image img {
     width: 32vw;
     margin-bottom: 2%;
+  }
+  .google-map-image {
+    height: 650px;
+  }
+  .contact {
+    top: 13em;
+    height: 0em;
   }
 }
