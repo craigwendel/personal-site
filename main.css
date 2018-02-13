@@ -403,7 +403,7 @@ footer {
     margin:  3% 0% 0% 22%;
     font-size: 1.4em;
   }
-  .contact-links h3 {
+  .contact-links {
     font-size: 2em;
   }
   .contact-ul a {
@@ -550,6 +550,10 @@ footer {
 @media (min-width: 1400px) and (max-width: 1650px) {
   .sub-heading {
     margin-top: 8%;
+  }
+  .contact {
+    top: 8em;
+    height: 0em;
   }
 }
 
