@@ -3,6 +3,17 @@
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
+:root {
+  --medium-blue: #34495E;
+  --light-grey: #ecf0f1;
+  --dark-grey: #bdc3c7;
+  --dark-blue: #2c3e50;
+  --sky-blue: #D9F7FA;
+  --light-green: #1abc9c;
+  --light-blue: #2980b9;
+  --light-purple: #F5F0F6;
+  --dark-green: #16a085;
+}
 .main-nav {
   position: fixed;
   top: 0;
@@ -13,32 +24,32 @@
   background-color: transparent;
 }
 .nav-colored {
-  background-color: #34495e;
+  background-color: var(--medium-blue);
 }
 .logo {
   font-family: 'Yellowtail', cursive;
   font-size: 2em;
   text-shadow: 2px 2px #000;
-  color: #ecf0f1;
+  color: var(--light-grey);
   margin-left: 2%;
 }
 a#logo {
   text-decoration: none;
 }
 a#logo:hover {
-  color: #bdc3c7;
+  color: var(--dark-grey);
 }
 a.contact-scroll {
   font-family: 'Yellowtail', cursive;
   font-size: 2em;
   text-shadow: 2px 2px #000;
-  color: #ecf0f1;
+  color: var(--light-grey);
   margin-right: 2%;
   float: right;
   text-decoration: none;
 }
 a.contact-scroll:hover {
-  color: #bdc3c7;
+  color: var(--dark-grey);
 }
 header {
   height: 40em;
@@ -57,15 +68,15 @@ header {
 .main-heading h1 {
   z-index: 3;
   font-size: 4em;
-  color: #ecf0f1;
-  text-shadow: 3px 3px #2c3e50;
+  color: var(--light-grey);
+  text-shadow: 3px 3px var(--dark-blue);
   text-align: center;
 }
 .main-heading h4 {
   z-index: 3;
   font-size: 3em;
-  color: #ecf0f1;
-  text-shadow: 2px 2px #2c3e50;
+  color: var(--light-grey);
+  text-shadow: 2px 2px var(--dark-blue);
 }
 .main-heading a {
   animation: blinking 0.5s infinite alternate;
@@ -73,16 +84,16 @@ header {
   white-space: nowrap;
   text-decoration: none;
   font-size: 1em;
-  color: #ecf0f1;
-  text-shadow: 2px 2px #2c3e50;
-  border-right: 2px solid #ecf0f1;
+  color: var(--light-grey);
+  text-shadow: 2px 2px var(--dark-blue);
+  border-right: 2px solid var(--light-grey);
 }
 @keyframes blinking {
   from {
     border-color: transparent;
   }
   to {
-    border-color: #ecf0f1;
+    border-color: var(--light-grey);
   }
 }
 .sub-heading {
@@ -95,20 +106,20 @@ header {
 .sub-heading a {
   z-index: 3;
   font-size: 1.75em;
-  color: #ecf0f1;
-  text-shadow: 2px 2px #2c3e50;
+  color: var(--light-grey);
+  text-shadow: 2px 2px var(--dark-blue);
   text-align: center;
   text-decoration: none;
 }
 .projects {
-  background-color: #ecf0f1;
+  background-color: var(--light-grey);
   height: 95em;
 }
 .projects h3 {
   font-size: 2em;
   text-align: center;
   padding: 2% 0% 1% 0%;
-  color: #34495e;
+  color: var(--medium-blue);
 }
 .main-projects {
   display: flex;
@@ -127,10 +138,10 @@ header {
   font-size: 1.25em;
 }
 .project-info p {
-  color: #34495e;
+  color: var(--medium-blue);
 }
 .project-info h4 {
-  color: #34495e;
+  color: var(--medium-blue);
   margin-bottom: 2%;
 }
 .project-image img {
@@ -140,12 +151,12 @@ header {
   opacity: 0.7;
 }
 #project-first {
-background-color: #D9F7FA;
+background-color: var(--sky-blue);
 width: 100%;
 padding: 0% 5%;
 }
 #project-mid {
-  background-color: #1abc9c;
+  background-color: var(--light-green);
   width: 100%;
   padding: 0% 5% 0% 5%;
 }
@@ -156,33 +167,33 @@ padding: 0% 5%;
     height: 2.5em;
     line-height: 2.5em;
     border-radius: 50%;
-    color:#ecf0f1;
+    color:var(--light-grey);
     text-align:center;
     text-decoration:none;
-    background-color: #34495e;
+    background-color: var(--medium-blue);
     border-radius: 50%;
 }
 .a-button:hover {
-    background: #2980b9;
+    background: var(--light-blue);
     cursor: auto;
 }
 .fa-link {
   font-size: 1em;
   padding: 1%;
-  color: #ecf0f1;
+  color: var(--light-grey);
 }
 .fa-code {
   font-size: 1em;
-  color: #ecf0f1;
+  color: var(--light-grey);
 }
 .languages {
   height: 20em;
-  background-color: #D9F7FA;
+  background-color: var(--sky-blue);
 }
 .languages h3 {
   font-size: 2em;
   text-align: center;
-  color: #34495e;
+  color: var(--medium-blue);
   padding: 2% 0% 1% 0%;
 }
 .language-images {
@@ -217,7 +228,7 @@ padding: 0% 5%;
 }
 .contact-links h3 {
   font-size: 2.5em;
-  color: #34495e;
+  color: var(--medium-blue);
   text-align: center;
 }
 .contact-ul {
@@ -234,7 +245,7 @@ padding: 0% 5%;
   color: rgba(41, 128, 185, 1.0);
 }
 .contact-ul a:hover {
-  color: #34495e;
+  color: var(--medium-blue);
   cursor: pointer;
 }
 .about-craig {
@@ -242,7 +253,7 @@ padding: 0% 5%;
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  color: #ecf0f1;
+  color: var(--light-grey);
   font-size: 2em;
   padding-top: 2%;
 }
@@ -258,7 +269,7 @@ padding: 0% 5%;
   font-size: .8em;
 }
 .resume {
-  background-color: #F5F0F6;
+  background-color: var(--light-purple);
 }
 .my-resume {
   font-size: 2em;
@@ -270,11 +281,11 @@ padding: 0% 5%;
 }
 .my-resume a {
   text-decoration: none;
-  color: #34495e;
+  color: var(--medium-blue);
   text-align: center;
 }
 .my-resume a:hover {
-  color: #2980b9;
+  color: var(--light-blue);
 }
 .fa-file-text {
   font-size: 2.5em;
@@ -302,15 +313,15 @@ padding: 0% 5%;
 }
 a#scroll {
   text-decoration: none;
-  color: #ecf0f1;
+  color: var(--light-grey);
   margin-left: 5%;
 }
 footer {
-  background-color: #16a085;
+  background-color: var(--dark-green);
   height: 2em;
   display: flex;
   align-items: center;
-  color: #ecf0f1;
+  color: var(--light-grey);
   font-size: 1.5em;
   z-index: 1
 }

@@ -1,9 +1,10 @@
-let myNav = document.getElementById('main-nav')
+const myNav = document.getElementById('main-nav')
 window.onscroll = function () {
   'use strict'
-  if (document.body.scrollTop >= 580) {
+  if (document.body.scrollTop || document.documentElement.scrollTop >= 580) {
     myNav.classList.add('nav-colored')
     myNav.classList.remove('nav-transparent')
+    console.log(window.onscroll)
   } else {
     myNav.classList.add('nav-transparent')
     myNav.classList.remove('nav-colored')
