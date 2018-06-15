@@ -1,0 +1,641 @@
+$mediumBlue: #34495E;
+$lightGrey: #ecf0f1;
+$darkGrey: #bdc3c7;
+$darkBlue: #2c3e50;
+$skyBlue: #D9F7FA;
+$lightGreen: #1abc9c;
+$lightBlue: #2980b9;
+$lightPurple: #F5F0F6;
+$darkGreen: #16a085;
+$defaultFont:  'Roboto', sans-serif;
+$defaultFontSize: 1em;
+ 
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: $defaultFont;
+  }
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.nav-transparent {
+    background-color: transparent;
+}
+.nav-colored {
+    background-color: $mediumBlue;
+}
+.logo {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+    color: $lightGrey;
+    margin-left: 2%;
+}
+a#logo {
+    text-decoration: none;
+    &:hover {
+        color: $darkGrey;
+    }
+}
+a.contact-scroll {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+    color: $lightGrey;
+    margin-right: 2%;
+    float: right;
+    text-decoration: none;
+    &:hover {
+        color: $darkGrey;
+    }
+}
+header {
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/apple-imac-ipad-workplace-converted.jpeg');
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+}
+.main-heading {
+    margin-top: 15%;
+    z-index: 3;
+    color: $lightGrey;
+    h1 {
+        font-size: 4em;
+        text-shadow: 3px 3px $darkBlue;
+        text-align: center;
+    }
+    h4 {
+        font-size: 3em;
+        text-shadow: 2px 2px $darkBlue;
+    }
+    a {
+        animation: blinking 0.5s infinite alternate;
+        overflow: hidden;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 1em;
+        color: $lightGrey;
+        border-right: 2px solid $lightGrey;
+        text-shadow: 2px 2px $darkBlue;
+    }
+}
+@keyframes blinking {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: $lightGrey;
+    }
+}
+.sub-heading {
+    margin-bottom: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    a {
+        z-index: 3;
+        font-size: 1.75em;
+        color: $lightGrey;
+        text-shadow: 2px 2px $darkBlue;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.projects {
+    background-color: $lightGrey;
+    height: 95em;
+    h3 {
+        font-size: 2em;
+        text-align: center;
+        padding: 2% 0% 1% 0%;
+        color: $mediumBlue;
+    }
+}
+.main-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 22em;
+    width: 90%
+}
+.project-info {
+    width: 40%;
+    font-size: 1.25em;
+    color: $mediumBlue;
+    h4 {
+        margin-bottom: 2%;
+    }
+}
+.project-image img {
+    width: 30vw;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+#project-first {
+    background-color: $skyBlue;
+    width: 100%;
+    padding: 0% 5%;
+}
+#project-mid {
+    background-color: $lightGreen;
+    width: 100%;
+    padding: 0% 5%;
+}
+.a-button {
+    display: inline-block;
+    margin-top: 2%;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    color:$lightGrey;
+    text-align:center;
+    text-decoration:none;
+    background-color: $mediumBlue;
+    border-radius: 50%;
+    &:hover {
+        background: $lightBlue;
+        cursor: auto;
+    }
+}
+.fa-link {
+    font-size: 1em;
+    padding: 1%;
+    color: $lightGrey;
+}
+.fa-code {
+    font-size: 1em;
+    color: $lightGrey;
+}
+.languages {
+    height: 20em;
+    background-color: $skyBlue;
+    h3 {
+        font-size: 2em;
+        text-align: center;
+        color: $mediumBlue;
+        padding: 2% 0% 1% 0%;
+    }
+}
+.language-images {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7em;
+    width: 60%;
+    img {
+        width: 8vw;
+    }
+}
+.google-map-image {
+    background-image: url('./images/houston-google-map-converted.jpg');
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+.contact {
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+    top: 10em;
+    height: 0em;
+}
+.contact-links h3 {
+    font-size: 2.5em;
+    color: $mediumBlue;
+    text-align: center;
+}
+.contact-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 5em;
+    font-size: 1.75em;
+    padding: 0%;
+    a {
+        font-size: 3em;
+        color: rgba(41, 128, 185, 1.0);
+        &:hover {
+            color: $mediumBlue;
+            cursor: pointer;
+        }
+    }
+}
+.about-craig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    color: $lightGrey;
+    font-size: 2em;
+    padding-top: 2%;
+    img {
+        width: 20vw;
+        border-radius: 100%;
+        text-align: center;
+        z-index: 3;
+        margin-top: 4%;
+    }
+    p {
+        margin: 4% 0%;
+        font-size: .8em;
+    }
+}
+.resume {
+    background-color: $lightPurple;
+}
+.my-resume {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8em;
+    padding-bottom: 2%;
+    a {
+        text-decoration: none;
+        color: $mediumBlue;
+        text-align: center;
+        &:hover {
+            color: $lightBlue;
+        }
+    }
+}
+.fa-file-text {
+    font-size: 2.5em;
+    margin-bottom: 8%;
+}
+#scroll {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+    color: $lightGrey;
+    background-color: #2ecc71;
+    display: none;
+    border-radius: 50%;
+    a {
+        text-decoration: none;
+        margin-left: 5%;
+    }
+}
+#scroll:hover {
+    background-color: #27ae60;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+.fa-chevron-up {
+    font-size: 1.5em;
+    margin-left: 25%;
+    padding-top: 20%;
+}
+footer {
+    background-color: $darkGreen;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    color: $lightGrey;
+    font-size: 1.5em;
+    z-index: 1
+}
+ 
+/*------------ MEDIA QUERY: MOBILE DEVICES ------------*/
+ 
+@media (min-width: 300px) and (max-width: 600px) {
+.logo {
+    font-size: 1.5em;
+}
+a.contact-scroll {
+    font-size: 1.5em;
+}
+header {
+    background-position: left bottom;
+}
+.main-heading h1 {
+    font-size: 2.5em;
+}
+.main-heading h4 {
+    font-size: 1.5em;
+    margin: 2% 4%;
+}
+.main-heading a {
+    font-size: 1em;
+    margin: 1%;
+}
+.sub-heading a {
+    font-size: 1.25em;
+    margin-top: 20%;
+}
+.projects {
+    height: 115em;
+}
+.project-flex {
+    flex-direction: column;
+    justify-content: center;
+    height: 28em;
+}
+.project-info {
+    font-size: .8em;
+    width: 80%;
+    h4 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+}
+.project-image img {
+    width: 60vw;
+    margin-bottom: 2%;
+}
+.a-button {
+    margin-top: 3%;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+}
+.fa-link,.fa-code {
+    font-size: 1.25em;
+}
+.languages {
+    height: 18em;
+    h3 {
+        font-size: 2em;
+        border: none;
+    }
+}
+.language-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    img {
+        width: 18vw;
+    }
+} 
+.google-map-image {
+    background-attachment: scroll;
+    background-position: center;
+    height: 325px;
+}
+.contact {
+    top: 5em;
+    height: 0em;
+}
+.contact-ul {
+    align-items: flex-start;
+    width: 55%;
+    margin:  3% 0% 0% 22%;
+    font-size: 1.5em;
+    a {
+        font-size: 1.75em;
+    }
+} 
+.about-craig {
+    width: 80%;
+    h3 {
+        text-align: center;
+    }
+    img {
+        width: 30vw;
+    }
+    p {
+        font-size: .6em;
+    }
+}
+}
+ 
+/*------------ MEDIA QUERY: TABLET ------------*/
+ 
+@media (min-width: 601px) and (max-width: 900px) {
+.logo {
+    font-size: 1.75em;
+}
+a.contact-scroll {
+    font-size: 1.75em;
+}
+.sub-heading {
+    margin: 11% 0% 0% 0%;
+}
+.main-heading h1 {
+    font-size: 2.5em;
+}
+.main-heading h4 {
+    font-size: 1.75em;
+}
+.projects {
+    height: 140em;
+}
+.project-flex {
+    height: 34em;
+    flex-direction: column;
+    justify-content: center;
+}
+.project-info {
+    font-size: .8em;
+    width: 80%;
+    h4 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+.project-image img {
+    width: 50vw;
+    margin-bottom: 2%;
+}
+.a-button {
+    margin-top: 3%;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+}
+.fa-link,.fa-code {
+    font-size: 1.25em;
+}
+.languages {
+    height: 16em;
+    h3 {
+        font-size: 2em;
+        border: none;
+    }
+}
+.language-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    img {
+        width: 11vw;
+    }
+}
+.google-map-image {
+    height: 350px;
+}
+.contact {
+    top: 5em;
+    height: 0em;
+}
+.contact-ul {
+    padding: 0%;
+    a {
+        font-size: 2.15em;
+    }
+}
+.about-craig {
+    width: 80%;
+    img {
+        width: 30vw;
+    }
+}
+}
+ 
+/*------------ MEDIA QUERY: LABTOP/SMALL DESKTOP ------------*/
+ 
+@media (min-width: 901px) and (max-width: 1100px) {
+.main-heading h1 {
+    font-size: 3.5em;
+}
+.main-heading h4 {
+    font-size: 2em;
+}
+.project-image img {
+    width: 45vw;
+    margin-bottom: 2%;
+}
+.language-images {
+    display: flex;
+    width: 95%;
+    img {
+        width: 11vw;
+    }
+}
+.google-map-image {
+    height: 400px;
+}
+.contact {
+    top: 5em;
+    height: 0em;
+}
+.contact-ul {
+    padding: 0%;
+    font-size: 1.8em;
+    a {
+        font-size: 2.5em;
+    }
+}
+.about-craig img {
+    width: 30vw;
+}
+}
+ 
+@media (min-width: 1400px) and (max-width: 1650px) {
+.sub-heading {
+    margin-top: 8%;
+}
+.contact {
+    top: 8em;
+    height: 0em;
+}
+}
+ 
+/*------------ MEDIA QUERY: LARGE DISPLAYS ------------*/
+ 
+@media (min-width: 1651px) {
+.sub-heading {
+    margin-top: 8%;
+}
+.projects {
+    height: 138em;
+    h3 {
+        font-size: 3em;
+    }
+}
+.project-flex {
+    height: 32em;
+}
+.project-info h4 {
+    font-size: 2.25em;
+}
+.project-info p {
+    font-size: 1.4em;
+}
+.project-image img {
+    width: 42vw;
+    margin-bottom: 2%;
+}
+.languages {
+    height: 25em;
+    h3 {
+        font-size: 3em;
+    }
+} 
+.contact-links {
+    height: 15em;
+}
+.contact h3 {
+    font-size: 3em;
+}
+.google-map-image {
+    height: 550px;
+}
+.contact {
+    top: 9em;
+    height: 0em;
+}
+.contact-ul {
+    padding: 0%;
+}
+.contact-ul a {
+    font-size: 3.5em;
+}
+.about-craig h3 {
+    font-size: 1.5em;
+}
+.resume h3 {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+}
+}
+ 
+/*------------ MEDIA QUERY: 27+ INCH DISPLAYS ------------*/
+ 
+@media (min-width: 1900px) {
+ 
+    .sub-heading {
+        margin-top: 4%;
+    }
+    .project-image img {
+        width: 32vw;
+        margin-bottom: 2%;
+    }
+    .google-map-image {
+        height: 650px;
+    }
+    .contact {
+        top: 13em;
+        height: 0em;
+    }
+}
